@@ -1,10 +1,10 @@
 # Setup Jenkins on Linux(UBUNTU)
 
 ## Install Jenkins in Linux
-  sudo apt-get update
+    sudo apt-get update
 
 ## Install Java 17
-  sudo apt install openjdk-17-jdk openjdk-17-jre -y
+    sudo apt install openjdk-17-jdk openjdk-17-jre -y
 
 
 ## Set JAVA_HOME Variable
@@ -17,8 +17,9 @@
     export PATH=$PATH:$JAVA_HOME/bin
   
 - To set it permanently, open environment file in vi editor
-- sudo vi /etc/environment
-- write this in file at the end -> JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+    sudo vi /etc/environment
+- write this in file at the end
+    JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 
 ## Jenkins Installation
   Add Jenkins Repository key to the system, it will add key in the apt-key package.
