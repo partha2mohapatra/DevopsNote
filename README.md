@@ -8,10 +8,13 @@
 
 
 ## Set JAVA_HOME Variable
-- cd /usr/lib/jvm/java-17-openjdk-amd64
-- export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
-- echo $JAVA_HOME
-- export PATH=$PATH:$JAVA_HOME/bin
+    cd /usr/lib/jvm/java-17-openjdk-amd64
+    
+    export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+    
+    echo $JAVA_HOME
+    
+    export PATH=$PATH:$JAVA_HOME/bin
   
 - To set it permanently, open environment file in vi editor
 - sudo vi /etc/environment
@@ -46,7 +49,7 @@
 ## Sign up to NGROK proxy and verify email
 
 ## Add auth token
-- ngrok config add-authtoken <token>
+    ngrok config add-authtoken <token>
 
 ## Link to Jenkins
 - ngrok http http://122.11.11.11:8080
