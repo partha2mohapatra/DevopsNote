@@ -23,22 +23,25 @@
 
 ## Jenkins Installation
   Add Jenkins Repository key to the system, it will add key in the apt-key package.
-  - curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
-  - echo 'deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/' | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
-  - sudo apt-get update && sudo apt-get install jenkins -y
+  
+    curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+
+    echo 'deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/' | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+    sudo apt-get update && sudo apt-get install jenkins -y
 
     
 ## Start the Jenkins service:
-  sudo systemctl start jenkins
+      sudo systemctl start jenkins
 
 ## Enable Jenkins on startup:
-  sudo systemctl enable jenkins
+      sudo systemctl enable jenkins
 
 ## Check Jenkins status:
-  systemctl status jenkins
+      systemctl status jenkins
 
 ## Copy Jenkins Admin Password
-  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+      sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ###############################################################
 
