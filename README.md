@@ -49,8 +49,7 @@
 - ngrok config add-authtoken <token>
 
 ## Link to Jenkins
-- ngrok http http://122.11.11.11:8080
-  ![image](https://github.com/partha2mohapatra/DevopsNote/assets/111627485/024ac915-7870-45bf-bbfe-9d4c24cef65e)
+- ngrok http http://122.11.11.11:8080 ![image](https://github.com/partha2mohapatra/DevopsNote/assets/111627485/024ac915-7870-45bf-bbfe-9d4c24cef65e)
 
 ## Go to Github repo Setings> Webhook
 - Add the payload url(copy from ngrok proxy terminal)
